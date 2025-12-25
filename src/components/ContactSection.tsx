@@ -22,7 +22,7 @@ const ContactSection = () => {
               transition={{ duration: 0.6 }}
               className="text-primary font-medium mb-4"
             >
-              Contact
+              문의하기
             </motion.p>
             <motion.h2
               initial={{ opacity: 0, y: 40 }}
@@ -47,19 +47,19 @@ const ContactSection = () => {
                 <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
                   <MapPin className="w-5 h-5 text-primary" />
                 </div>
-                <span className="font-korean">서울시 강남구 강남대로 308 랜드마크타워</span>
+                <span className="font-korean">서울시 강남구 테헤란로 152 강남파이낸스센터</span>
               </div>
               <div className="flex items-center gap-4 text-muted-foreground">
                 <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
                   <Phone className="w-5 h-5 text-primary" />
                 </div>
-                <span>+82-2-2016-2300</span>
+                <span>+82-2-1234-5678</span>
               </div>
               <div className="flex items-center gap-4 text-muted-foreground">
                 <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
                   <Mail className="w-5 h-5 text-primary" />
                 </div>
-                <span>contact@innocean.com</span>
+                <span>hello@motif.kr</span>
               </div>
             </motion.div>
           </div>
@@ -72,55 +72,55 @@ const ContactSection = () => {
             transition={{ duration: 0.8 }}
             className="p-8 md:p-10 rounded-3xl glass"
           >
-            <h3 className="text-2xl font-bold mb-8">Get On Board</h3>
+            <h3 className="text-2xl font-bold mb-8 font-korean">프로젝트 문의</h3>
             <form className="space-y-6">
               <div className="grid grid-cols-2 gap-4">
                 <div>
-                  <label className="text-sm text-muted-foreground mb-2 block">First Name</label>
+                  <label className="text-sm text-muted-foreground mb-2 block font-korean">이름</label>
                   <input
                     type="text"
                     className="w-full px-4 py-3 bg-background/50 border border-border rounded-xl focus:outline-none focus:border-primary transition-colors"
-                    placeholder="John"
+                    placeholder="홍길동"
                   />
                 </div>
                 <div>
-                  <label className="text-sm text-muted-foreground mb-2 block">Last Name</label>
+                  <label className="text-sm text-muted-foreground mb-2 block font-korean">연락처</label>
                   <input
                     type="text"
                     className="w-full px-4 py-3 bg-background/50 border border-border rounded-xl focus:outline-none focus:border-primary transition-colors"
-                    placeholder="Doe"
+                    placeholder="010-1234-5678"
                   />
                 </div>
               </div>
               <div>
-                <label className="text-sm text-muted-foreground mb-2 block">Email</label>
+                <label className="text-sm text-muted-foreground mb-2 block font-korean">이메일</label>
                 <input
                   type="email"
                   className="w-full px-4 py-3 bg-background/50 border border-border rounded-xl focus:outline-none focus:border-primary transition-colors"
-                  placeholder="john@company.com"
+                  placeholder="example@company.com"
                 />
               </div>
               <div>
-                <label className="text-sm text-muted-foreground mb-2 block">Company</label>
+                <label className="text-sm text-muted-foreground mb-2 block font-korean">회사명</label>
                 <input
                   type="text"
                   className="w-full px-4 py-3 bg-background/50 border border-border rounded-xl focus:outline-none focus:border-primary transition-colors"
-                  placeholder="Your Company"
+                  placeholder="회사명을 입력해주세요"
                 />
               </div>
               <div>
-                <label className="text-sm text-muted-foreground mb-2 block">Message</label>
+                <label className="text-sm text-muted-foreground mb-2 block font-korean">프로젝트 내용</label>
                 <textarea
                   rows={4}
                   className="w-full px-4 py-3 bg-background/50 border border-border rounded-xl focus:outline-none focus:border-primary transition-colors resize-none"
-                  placeholder="Tell us about your project..."
+                  placeholder="프로젝트에 대해 알려주세요..."
                 />
               </div>
               <button
                 type="submit"
-                className="w-full inline-flex items-center justify-center gap-3 px-8 py-4 bg-primary text-primary-foreground font-semibold rounded-xl hover:opacity-90 transition-all duration-300 group glow"
+                className="w-full inline-flex items-center justify-center gap-3 px-8 py-4 bg-primary text-primary-foreground font-semibold rounded-xl hover:opacity-90 transition-all duration-300 group glow font-korean"
               >
-                Send Message
+                문의 보내기
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </button>
             </form>

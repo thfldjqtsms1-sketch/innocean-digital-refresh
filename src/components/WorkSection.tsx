@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
-import { useRef, useState, useEffect } from 'react';
+import { useRef } from 'react';
 import { ArrowRight } from 'lucide-react';
 
 interface WorkItemProps {
@@ -52,39 +52,39 @@ const WorkItem = ({ title, client, category, color, index }: WorkItemProps) => {
 
 const works = [
   {
-    title: "네이버에서 스포티파이를",
-    client: "NAVER",
-    category: "Campaign",
+    title: "새로운 연결의 시작",
+    client: "카카오",
+    category: "캠페인",
     color: "#22c55e",
   },
   {
-    title: "Driving Innovation Forward",
-    client: "Hyundai Motor",
-    category: "Brand Experience",
+    title: "미래를 향한 혁신",
+    client: "현대자동차",
+    category: "브랜드 경험",
     color: "#3b82f6",
   },
   {
-    title: "The Art of Movement",
-    client: "Genesis",
-    category: "Digital Campaign",
+    title: "움직임의 예술",
+    client: "제네시스",
+    category: "디지털 캠페인",
     color: "#8b5cf6",
   },
   {
-    title: "Urban Mobility Reimagined",
-    client: "Kia",
-    category: "Product Launch",
+    title: "도시 모빌리티의 재정의",
+    client: "기아",
+    category: "제품 런칭",
     color: "#f59e0b",
   },
   {
-    title: "Connect Everything",
-    client: "Samsung",
-    category: "Integrated Campaign",
+    title: "모든 것을 연결하다",
+    client: "삼성전자",
+    category: "통합 캠페인",
     color: "#ec4899",
   },
   {
-    title: "Future of Entertainment",
-    client: "LG Electronics",
-    category: "Brand Strategy",
+    title: "엔터테인먼트의 미래",
+    client: "LG전자",
+    category: "브랜드 전략",
     color: "#06b6d4",
   },
 ];
@@ -107,23 +107,23 @@ const WorkSection = () => {
             transition={{ duration: 0.6 }}
             className="text-primary font-medium mb-4"
           >
-            Featured Work
+            선정 프로젝트
           </motion.p>
           <motion.h2
             initial={{ opacity: 0, y: 40 }}
             animate={isHeaderInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.1 }}
-            className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6"
+            className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 font-korean"
           >
-            Our Latest
+            최신
             <br />
-            <span className="text-gradient">Projects</span>
+            <span className="text-gradient">프로젝트</span>
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={isHeaderInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-muted-foreground text-lg max-w-xl"
+            className="text-muted-foreground text-lg max-w-xl font-korean"
           >
             방대한 데이터와 기술, 생각하지 못한 크리에이티브로 새로운 브랜드 경험을 만듭니다.
           </motion.p>
@@ -148,7 +148,7 @@ const WorkSection = () => {
             href="#"
             className="inline-flex items-center gap-3 px-8 py-4 border border-foreground/20 text-foreground font-semibold rounded-full hover:bg-foreground hover:text-background transition-all duration-300 group"
           >
-            View All Work
+            전체 보기
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </a>
         </motion.div>

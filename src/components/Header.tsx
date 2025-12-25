@@ -3,11 +3,11 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, Search, Globe } from 'lucide-react';
 
 const navItems = [
-  { label: 'Work', href: '#work' },
-  { label: 'Expertise', href: '#expertise' },
-  { label: 'About', href: '#about' },
-  { label: 'Values', href: '#values' },
-  { label: 'Contact', href: '#contact' },
+  { label: '프로젝트', href: '#work' },
+  { label: '서비스', href: '#expertise' },
+  { label: '회사소개', href: '#about' },
+  { label: '네트워크', href: '#values' },
+  { label: '문의', href: '#contact' },
 ];
 
 const Header = () => {
@@ -35,8 +35,8 @@ const Header = () => {
         <div className="container mx-auto px-6 lg:px-12 flex items-center justify-between">
           {/* Logo */}
           <a href="#" className="text-2xl font-bold tracking-tight">
-            <span className="text-foreground">INNO</span>
-            <span className="text-primary">CEAN</span>
+            <span className="text-foreground">MO</span>
+            <span className="text-primary">TIF</span>
           </a>
 
           {/* Desktop Navigation */}
@@ -82,8 +82,8 @@ const Header = () => {
             <div className="container mx-auto px-6 py-6 flex flex-col h-full">
               <div className="flex items-center justify-between">
                 <a href="#" className="text-2xl font-bold tracking-tight">
-                  <span className="text-foreground">INNO</span>
-                  <span className="text-primary">CEAN</span>
+                  <span className="text-foreground">MO</span>
+                  <span className="text-primary">TIF</span>
                 </a>
                 <button
                   onClick={() => setIsMobileMenuOpen(false)}

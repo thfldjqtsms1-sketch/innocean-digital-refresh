@@ -49,17 +49,17 @@ const StatItem = ({ value, suffix, label, delay }: StatItemProps) => {
         </span>
         <span className="text-primary">{suffix}</span>
       </div>
-      <p className="text-muted-foreground font-medium">{label}</p>
+      <p className="text-muted-foreground font-medium font-korean">{label}</p>
     </motion.div>
   );
 };
 
 const stats = [
-  { value: 9419, suffix: "억원", label: "매출총이익 '24년 기준" },
-  { value: 1557, suffix: "억원", label: "영업이익 '24년 기준" },
-  { value: 1161, suffix: "억원", label: "당기순이익 '24년 기준" },
-  { value: 23, suffix: "개국", label: "진출 국가" },
-  { value: 32, suffix: "개", label: "글로벌 네트워크" },
+  { value: 150, suffix: "+", label: "완료 프로젝트" },
+  { value: 50, suffix: "+", label: "클라이언트" },
+  { value: 12, suffix: "년", label: "업력" },
+  { value: 35, suffix: "+", label: "전문 인력" },
+  { value: 98, suffix: "%", label: "고객 만족도" },
 ];
 
 const StatsSection = () => {
@@ -82,9 +82,9 @@ const StatsSection = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={isHeaderInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6 }}
-            className="text-primary font-medium mb-4"
+            className="text-primary font-medium mb-4 font-korean"
           >
-            Company Information
+            회사 정보
           </motion.p>
           <motion.h2
             initial={{ opacity: 0, y: 40 }}
@@ -94,7 +94,7 @@ const StatsSection = () => {
           >
             브랜드를 성장시키는 힘
             <br />
-            <span className="text-primary neon-text">숫자와 규모</span>부터 다릅니다.
+            <span className="text-primary neon-text">숫자</span>로 증명합니다.
           </motion.h2>
         </div>
 
