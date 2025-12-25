@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 
 const MarqueeSection = () => {
   const brands = [
-    "HYUNDAI", "KIA", "GENESIS", "NAVER", "SAMSUNG", "LG", "SK", "CJ"
+    "현대", "기아", "제네시스", "카카오", "삼성", "LG", "SK", "CJ", "네이버", "쿠팡"
   ];
 
   return (
@@ -13,7 +13,7 @@ const MarqueeSection = () => {
           {[...brands, ...brands].map((brand, index) => (
             <span
               key={index}
-              className="mx-12 text-4xl md:text-5xl lg:text-6xl font-bold text-muted/30 hover:text-primary/50 transition-colors cursor-default"
+              className="mx-12 text-4xl md:text-5xl lg:text-6xl font-bold text-muted/30 hover:text-primary/50 transition-colors cursor-default font-korean"
             >
               {brand}
             </span>

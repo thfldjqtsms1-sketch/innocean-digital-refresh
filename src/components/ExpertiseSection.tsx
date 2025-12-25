@@ -5,25 +5,25 @@ import { ArrowRight, Lightbulb, TrendingUp, Palette, Megaphone } from 'lucide-re
 const services = [
   {
     icon: Lightbulb,
-    title: "Brand Strategy",
+    title: "브랜드 전략",
     description: "데이터 기반의 브랜드 전략으로 시장을 선도합니다.",
     color: "from-yellow-500/20 to-orange-500/20",
   },
   {
     icon: Palette,
-    title: "Creative Design",
+    title: "크리에이티브 디자인",
     description: "혁신적인 크리에이티브로 브랜드 경험을 설계합니다.",
     color: "from-pink-500/20 to-purple-500/20",
   },
   {
     icon: Megaphone,
-    title: "Digital Marketing",
+    title: "디지털 마케팅",
     description: "디지털 채널을 통한 통합 마케팅 캠페인을 진행합니다.",
     color: "from-blue-500/20 to-cyan-500/20",
   },
   {
     icon: TrendingUp,
-    title: "Data Analytics",
+    title: "데이터 분석",
     description: "빅데이터 분석으로 마케팅 효과를 극대화합니다.",
     color: "from-green-500/20 to-emerald-500/20",
   },
@@ -46,9 +46,9 @@ const ExpertiseSection = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={isHeaderInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6 }}
-              className="text-primary font-medium mb-4"
+              className="text-primary font-medium mb-4 font-korean"
             >
-              Business Solutions
+              비즈니스 솔루션
             </motion.p>
             <motion.h2
               initial={{ opacity: 0, y: 40 }}
@@ -75,9 +75,9 @@ const ExpertiseSection = () => {
               animate={isHeaderInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: 0.3 }}
               href="#"
-              className="inline-flex items-center gap-3 text-primary font-semibold hover:gap-5 transition-all duration-300 group"
+              className="inline-flex items-center gap-3 text-primary font-semibold hover:gap-5 transition-all duration-300 group font-korean"
             >
-              View Our Approach
+              자세히 보기
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </motion.a>
           </div>
@@ -99,7 +99,7 @@ const ExpertiseSection = () => {
                     <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors">
                       <Icon className="w-6 h-6 text-primary" />
                     </div>
-                    <h3 className="text-xl font-bold mb-3">{service.title}</h3>
+                    <h3 className="text-xl font-bold mb-3 font-korean">{service.title}</h3>
                     <p className="text-muted-foreground font-korean">{service.description}</p>
                   </div>
                 </motion.div>

@@ -3,12 +3,12 @@ import { useRef } from 'react';
 import { ArrowRight, MapPin } from 'lucide-react';
 
 const locations = [
-  { city: "Seoul", country: "Korea", type: "Headquarters" },
-  { city: "New York", country: "USA", type: "Office" },
-  { city: "London", country: "UK", type: "Office" },
-  { city: "Shanghai", country: "China", type: "Office" },
-  { city: "Frankfurt", country: "Germany", type: "Office" },
-  { city: "Dubai", country: "UAE", type: "Office" },
+  { city: "서울", country: "대한민국", type: "본사" },
+  { city: "부산", country: "대한민국", type: "지사" },
+  { city: "대전", country: "대한민국", type: "지사" },
+  { city: "광주", country: "대한민국", type: "지사" },
+  { city: "대구", country: "대한민국", type: "지사" },
+  { city: "제주", country: "대한민국", type: "지사" },
 ];
 
 const GlobalSection = () => {
@@ -41,9 +41,9 @@ const GlobalSection = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={isHeaderInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6 }}
-            className="text-primary font-medium mb-4"
+            className="text-primary font-medium mb-4 font-korean"
           >
-            Global Network
+            전국 네트워크
           </motion.p>
           <motion.h2
             initial={{ opacity: 0, y: 40 }}
@@ -51,7 +51,7 @@ const GlobalSection = () => {
             transition={{ duration: 0.8, delay: 0.1 }}
             className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 font-korean"
           >
-            세계 어디서나
+            대한민국 어디서나
             <br />
             <span className="text-primary neon-text">브랜드의 가능성</span>을 실현합니다.
           </motion.h2>
@@ -72,9 +72,9 @@ const GlobalSection = () => {
                 <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/20 transition-colors">
                   <MapPin className="w-5 h-5 text-primary" />
                 </div>
-                <h3 className="font-bold text-lg mb-1">{location.city}</h3>
-                <p className="text-sm text-muted-foreground">{location.country}</p>
-                <span className="inline-block mt-3 text-xs px-3 py-1 rounded-full bg-primary/10 text-primary">
+                <h3 className="font-bold text-lg mb-1 font-korean">{location.city}</h3>
+                <p className="text-sm text-muted-foreground font-korean">{location.country}</p>
+                <span className="inline-block mt-3 text-xs px-3 py-1 rounded-full bg-primary/10 text-primary font-korean">
                   {location.type}
                 </span>
               </div>
@@ -92,9 +92,9 @@ const GlobalSection = () => {
         >
           <a
             href="#"
-            className="inline-flex items-center gap-3 px-8 py-4 bg-primary text-primary-foreground font-semibold rounded-full hover:gap-5 transition-all duration-300 group glow"
+            className="inline-flex items-center gap-3 px-8 py-4 bg-primary text-primary-foreground font-semibold rounded-full hover:gap-5 transition-all duration-300 group glow font-korean"
           >
-            View Our Network
+            네트워크 보기
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </a>
         </motion.div>

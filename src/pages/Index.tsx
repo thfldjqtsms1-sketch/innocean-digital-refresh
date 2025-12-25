@@ -12,7 +12,7 @@ import Footer from '../components/Footer';
 const Index = () => {
   useEffect(() => {
     // Update page title and meta
-    document.title = 'INNOCEAN | Creative Experience Company';
+    document.title = 'MOTIF | 브랜드 경험 디자인 스튜디오';
   }, []);
 
   return (
