@@ -1,12 +1,33 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { useEffect } from 'react';
+import Header from '../components/Header';
+import HeroSection from '../components/HeroSection';
+import MarqueeSection from '../components/MarqueeSection';
+import WorkSection from '../components/WorkSection';
+import ExpertiseSection from '../components/ExpertiseSection';
+import StatsSection from '../components/StatsSection';
+import GlobalSection from '../components/GlobalSection';
+import ContactSection from '../components/ContactSection';
+import Footer from '../components/Footer';
 
 const Index = () => {
+  useEffect(() => {
+    // Update page title and meta
+    document.title = 'INNOCEAN | Creative Experience Company';
+  }, []);
+
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
+      <Header />
+      <main>
+        <HeroSection />
+        <MarqueeSection />
+        <WorkSection />
+        <ExpertiseSection />
+        <StatsSection />
+        <GlobalSection />
+        <ContactSection />
+      </main>
+      <Footer />
     </div>
   );
 };
