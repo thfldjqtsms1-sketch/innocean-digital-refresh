@@ -1,0 +1,186 @@
+.brand-page {
+    padding-top: 100px;
+}
+
+/* Page Hero - Reuse from Planning */
+.page-hero {
+    position: relative;
+    height: 50vh;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.page-hero-bg {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+    z-index: -1;
+}
+
+.page-hero-bg::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 20% 50%, rgba(196, 163, 90, 0.1) 0%, transparent 50%);
+}
+
+.page-hero-content {
+    padding: 0 80px;
+    text-align: left;
+}
+
+.page-subtitle {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 0.85rem;
+    letter-spacing: 0.4em;
+    color: var(--color-accent-gold);
+    margin-bottom: 20px;
+}
+
+.page-title {
+    font-family: var(--font-body);
+    font-size: clamp(2rem, 5vw, 4rem);
+    font-weight: 300;
+    letter-spacing: 0.1em;
+}
+
+/* Brand Meaning */
+.brand-meaning {
+    padding: 120px 0;
+    background: var(--color-bg-primary);
+}
+
+.section-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 80px;
+}
+
+.brand-intro-text {
+    text-align: left;
+    margin-bottom: 100px;
+}
+
+.brand-name {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(3rem, 8vw, 6rem);
+    font-weight: 300;
+    letter-spacing: 0.2em;
+    color: var(--color-accent-gold);
+    margin-bottom: 20px;
+}
+
+.brand-tagline {
+    font-size: 1.1rem;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    color: var(--color-text-secondary);
+}
+
+.meaning-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.meaning-card {
+    padding: 60px 40px;
+    background: var(--color-bg-secondary);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    text-align: left;
+    transition: all 0.3s ease;
+}
+
+.meaning-card:hover {
+    border-color: var(--color-accent-gold);
+}
+
+.meaning-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    letter-spacing: 0.2em;
+    color: var(--color-accent-gold);
+    margin-bottom: 10px;
+}
+
+.meaning-kr {
+    font-size: 1rem;
+    color: var(--color-text-primary);
+    margin-bottom: 25px;
+}
+
+.meaning-desc {
+    font-size: 0.9rem;
+    color: var(--color-text-secondary);
+    line-height: 2;
+}
+
+/* Brand Philosophy */
+.brand-philosophy {
+    position: relative;
+    padding: 200px 0;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+.philosophy-bg {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, #0a1520 0%, #152535 100%);
+    z-index: -1;
+}
+
+.philosophy-bg::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 70% 50%, rgba(196, 163, 90, 0.1) 0%, transparent 60%);
+}
+
+.philosophy-content {
+    text-align: left;
+    max-width: 700px;
+}
+
+.philosophy-label {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 0.85rem;
+    letter-spacing: 0.3em;
+    color: var(--color-accent-gold);
+    margin-bottom: 30px;
+}
+
+.philosophy-title {
+    font-family: var(--font-body);
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    font-weight: 300;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+    margin-bottom: 40px;
+}
+
+.philosophy-desc {
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 2.2;
+    color: var(--color-text-secondary);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .meaning-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .page-hero-content,
+    .section-container {
+        padding: 0 30px;
+    }
+}

@@ -1,0 +1,164 @@
+.footer {
+    background: var(--color-bg-secondary);
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.footer-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.footer-top {
+    padding: 80px 0;
+}
+
+.footer-top .footer-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 60px;
+    align-items: start;
+}
+
+/* Brand */
+.footer-brand {
+    text-align: left;
+}
+
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+.footer-logo-main {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    letter-spacing: 0.2em;
+    color: var(--color-accent-gold);
+}
+
+.footer-logo-sub {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 0.6rem;
+    letter-spacing: 0.3em;
+    color: var(--color-text-muted);
+}
+
+.footer-tagline {
+    font-size: 0.85rem;
+    color: var(--color-text-secondary);
+    line-height: 1.8;
+}
+
+/* Links */
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+
+.footer-col {
+    text-align: left;
+}
+
+.footer-col h4 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 0.8rem;
+    letter-spacing: 0.2em;
+    color: var(--color-accent-gold);
+    margin-bottom: 20px;
+}
+
+.footer-col a {
+    display: block;
+    font-size: 0.85rem;
+    color: var(--color-text-secondary);
+    text-decoration: none;
+    padding: 8px 0;
+    transition: color 0.3s ease;
+}
+
+.footer-col a:hover {
+    color: var(--color-text-primary);
+}
+
+/* Contact */
+.footer-contact {
+    text-align: right;
+}
+
+.contact-label {
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    color: var(--color-text-muted);
+    margin-bottom: 10px;
+}
+
+.contact-phone {
+    display: block;
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    color: var(--color-accent-gold);
+    text-decoration: none;
+    margin-bottom: 15px;
+    transition: color 0.3s ease;
+}
+
+.contact-phone:hover {
+    color: var(--color-accent-gold-light);
+}
+
+.contact-address {
+    font-size: 0.85rem;
+    color: var(--color-text-secondary);
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 25px 0;
+}
+
+.footer-bottom .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copyright {
+    font-size: 0.75rem;
+    color: var(--color-text-muted);
+}
+
+.disclaimer {
+    font-size: 0.7rem;
+    color: var(--color-text-muted);
+    opacity: 0.7;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .footer-top .footer-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .footer-brand,
+    .footer-col,
+    .footer-contact {
+        text-align: center;
+    }
+
+    .footer-links {
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .footer-bottom .footer-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

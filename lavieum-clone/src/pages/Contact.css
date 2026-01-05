@@ -1,0 +1,222 @@
+.contact-page {
+    padding-top: 100px;
+}
+
+.page-hero {
+    position: relative;
+    height: 50vh;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+}
+
+.page-hero-bg {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+    z-index: -1;
+}
+
+.page-hero-content {
+    padding: 0 80px;
+    text-align: left;
+}
+
+.page-subtitle {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 0.85rem;
+    letter-spacing: 0.4em;
+    color: var(--color-accent-gold);
+    margin-bottom: 20px;
+}
+
+.page-title {
+    font-family: var(--font-body);
+    font-size: clamp(2rem, 5vw, 4rem);
+    font-weight: 300;
+}
+
+.contact-info {
+    padding: 120px 0;
+    background: var(--color-bg-primary);
+}
+
+.section-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 80px;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+}
+
+.contact-left {
+    text-align: left;
+}
+
+.contact-label {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 0.85rem;
+    letter-spacing: 0.3em;
+    color: var(--color-accent-gold);
+    margin-bottom: 25px;
+}
+
+.contact-title {
+    font-family: var(--font-body);
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 300;
+    line-height: 1.4;
+    margin-bottom: 30px;
+}
+
+.contact-desc {
+    font-size: 1rem;
+    color: var(--color-text-secondary);
+    line-height: 2;
+    margin-bottom: 40px;
+}
+
+.contact-phone {
+    display: inline-block;
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: var(--color-accent-gold);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contact-phone:hover {
+    color: var(--color-accent-gold-light);
+}
+
+/* Form */
+.contact-form {
+    background: var(--color-bg-secondary);
+    padding: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 0.85rem;
+    color: var(--color-text-secondary);
+    margin-bottom: 10px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 15px;
+    background: var(--color-bg-tertiary);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: var(--color-text-primary);
+    font-family: var(--font-body);
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--color-accent-gold);
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 18px;
+    background: var(--color-accent-gold);
+    border: none;
+    color: var(--color-bg-primary);
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.submit-btn:hover {
+    background: var(--color-accent-gold-light);
+}
+
+/* Visit Info */
+.visit-info {
+    padding: 100px 0;
+    background: var(--color-bg-secondary);
+}
+
+.visit-header {
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+.visit-header h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    letter-spacing: 0.15em;
+}
+
+.title-divider {
+    width: 50px;
+    height: 1px;
+    background: var(--color-accent-gold);
+    margin-top: 20px;
+}
+
+.visit-details {
+    display: flex;
+    gap: 60px;
+}
+
+.visit-item {
+    text-align: left;
+}
+
+.visit-label {
+    font-size: 0.8rem;
+    color: var(--color-accent-gold);
+    display: block;
+    margin-bottom: 10px;
+}
+
+.visit-item p {
+    font-size: 1rem;
+    color: var(--color-text-secondary);
+}
+
+@media (max-width: 1024px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .page-hero-content,
+    .section-container {
+        padding: 0 30px;
+    }
+
+    .contact-form {
+        padding: 30px;
+    }
+
+    .visit-details {
+        flex-direction: column;
+        gap: 30px;
+    }
+}

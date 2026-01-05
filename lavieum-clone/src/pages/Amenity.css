@@ -1,0 +1,209 @@
+.amenity-page {
+    padding-top: 100px;
+}
+
+.page-hero {
+    position: relative;
+    height: 50vh;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+}
+
+.page-hero-bg {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+    z-index: -1;
+}
+
+.page-hero-content {
+    padding: 0 80px;
+    text-align: left;
+}
+
+.page-subtitle {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 0.85rem;
+    letter-spacing: 0.4em;
+    color: var(--color-accent-gold);
+    margin-bottom: 20px;
+}
+
+.page-title {
+    font-family: var(--font-body);
+    font-size: clamp(2rem, 5vw, 4rem);
+    font-weight: 300;
+}
+
+/* Intro */
+.amenity-intro {
+    padding: 120px 0;
+    background: var(--color-bg-primary);
+}
+
+.section-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 80px;
+}
+
+.amenity-intro-text {
+    text-align: left;
+}
+
+.amenity-label {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 0.85rem;
+    letter-spacing: 0.3em;
+    color: var(--color-accent-gold);
+    margin-bottom: 25px;
+}
+
+.amenity-title {
+    font-family: var(--font-body);
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 300;
+    line-height: 1.4;
+    letter-spacing: 0.05em;
+    margin-bottom: 30px;
+}
+
+.amenity-desc {
+    font-size: 1rem;
+    color: var(--color-text-secondary);
+    line-height: 2;
+}
+
+/* Amenity List */
+.amenity-list {
+    padding: 0 0 120px;
+    background: var(--color-bg-primary);
+}
+
+.amenity-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.amenity-card {
+    position: relative;
+    min-height: 400px;
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+
+.amenity-card.featured {
+    grid-column: span 2;
+    grid-row: span 2;
+    min-height: 100%;
+}
+
+.amenity-bg {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(26, 26, 26, 0.3) 0%, rgba(10, 10, 10, 0.9) 100%),
+        linear-gradient(135deg, #1a1a1a 0%, #252525 100%);
+    transition: all 0.5s ease;
+}
+
+.amenity-card:hover .amenity-bg {
+    background: linear-gradient(180deg, rgba(196, 163, 90, 0.1) 0%, rgba(10, 10, 10, 0.95) 100%),
+        linear-gradient(135deg, #1a1a1a 0%, #252525 100%);
+}
+
+.amenity-card:hover {
+    transform: translateY(-10px);
+}
+
+.amenity-content {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 50px;
+    text-align: left;
+}
+
+.amenity-floor {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: var(--color-accent-gold);
+    display: block;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.amenity-card:hover .amenity-floor {
+    transform: translateX(10px);
+}
+
+.amenity-content h3 {
+    font-family: var(--font-body);
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.amenity-content p {
+    font-size: 0.9rem;
+    color: var(--color-text-secondary);
+    line-height: 1.8;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.4s ease;
+}
+
+.amenity-card:hover .amenity-content p {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Featured card adjustments */
+.amenity-card.featured .amenity-floor {
+    font-size: 4rem;
+}
+
+.amenity-card.featured .amenity-content h3 {
+    font-size: 2rem;
+}
+
+.amenity-card.featured .amenity-content p {
+    font-size: 1rem;
+}
+
+@media (max-width: 1024px) {
+    .amenity-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .amenity-card.featured {
+        grid-column: span 2;
+        grid-row: span 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .section-container {
+        padding: 0 30px;
+    }
+
+    .amenity-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .amenity-card.featured {
+        grid-column: span 1;
+    }
+
+    .amenity-content {
+        padding: 30px;
+    }
+
+    .amenity-card.featured .amenity-floor {
+        font-size: 2.5rem;
+    }
+}
